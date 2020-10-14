@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("Police/Bebas.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url("Police/Lobster.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("Police/OpenSans.ttf") format("truetype");
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body > * {
+    padding: 0 439.5px;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aditii{
+    font-family: Lobster;
+    font-size: 60px;
+    color: rgb(60, 195, 181);
+    cursor: pointer;
+}
+
+form{
+    border: 1px solid rgb(225, 225, 225);
+    width: 433px;
+    height: 35px;
+    line-height: 35px;
+}
+
+#S{
+    border: none;
+    width: 390px;
+    height: 25px;
+}
+
+label{
+    color: rgb(227, 227, 227);
+    font-size: 23px;
+}
+
+#OK{
+    display: none;
+}
+
+.panier{
+    color: rgb(60, 195, 181);
+    font-size: 40px;   
+    cursor: pointer; 
+}
+
+.prix{
+    color: rgb(161, 161, 161);
+    display: inline;
+    cursor: pointer;
+}
+
+
+nav{
+    height: 40px;
+    background-color: rgb(76, 207, 193);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: Bebas;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.nav{
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.nav:hover{
+    color: rgb(76, 207, 193);
+    background-color: white;
+}
+
+.actif{
+    color: rgb(76, 207, 193);
+    background-color: white;
+}
+
+.slider{
+    background-color: rgb(64, 194, 181);
+    height: 445px;
+    display: flex;
+    align-items: center;
+}
+
+.img_slider{
+    padding: 0 50px;
+    cursor: pointer;
+}
+
+.contenu_slider{
+    padding: 0 160px 0 50px;
+}
+
+.titre_slider{
+    font-family: Bebas;
+    font-weight: lighter;
+    font-size: 80px;
+    color: white;
+    line-height: 70px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.p_slider{
+    font-family: OpenSans;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.shop_now{
+    font-family: Bebas;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.shop_now:hover{
+    color: rgb(64, 194, 181);
+    background-color: white;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.product{
+    height: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produit{
+    width: 343px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.produit img{
+    height: 100%;
+    cursor: pointer;
+}
+
+h2{
+    font-family: Bebas;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.shop{
+    width: 60px;
+    height: 30px;
+    font-family: Bebas;
+    font-size: 22px;
+    line-height: 27px;
+    color: white;
+    text-align: center;
+    background-color: rgb(60, 195, 149);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.shop:hover{
+    color: rgb(60, 195, 149);
+    background-color: white;
+    border: 2px solid rgb(60, 195, 149);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+p.featured_product{
+    height: 60px;
+    font-family: Bebas;
+    font-size: 35px;
+    color: white;
+    line-height: 65px;
+    padding-left: 60px;
+    background-color: rgb(61, 197, 186);
+}
+
+.featured_product{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produit_plus{
+    flex: 200px;
+    height: 260px;
+    margin: 50px;
+    text-align: center;
+    border-bottom: 3px solid rgb(60, 195, 149);
+}
+
+.produit_plus img{
+    cursor: pointer;
+    padding-top: 30px;
+}
+
+
+.prix_plus{
+    color: rgb(161, 161, 161);
+    font-family: Bebas;
+    font-size: 30px;
+}
+
+.buy_now{
+    font-family: Bebas;
+    font-size: 30px;
+    padding: 0 5px;
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(60, 195, 149);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.buy_now:hover{
+    background-color: white;
+    color: rgb(60, 195, 149);
+    border: 2px solid rgb(60, 195, 149);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+footer{
+    background-color: rgb(60, 195, 181);
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    color: white;
+    font-family: Bebas;
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 30px 0 10px 0;
+}
+
+p{
+    color: white;
+    padding: 3px 0;
+    font-family: OpenSans;
+    font-size: 15px;
+}
+
+.Copyright{
+    font-family: OpenSans;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(45, 168, 155);
+    color: white;
+    height: 45px;
+    line-height: 45px;
+}

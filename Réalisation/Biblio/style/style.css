@@ -1,0 +1,651 @@
+/* ******** */
+/* Générale */
+/* ******** */
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(Comfortaa-Regular.ttf) format(truetype);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body{
+    font-family: Comfortaa;
+    font-size: 30px;
+}
+
+main{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    height: 100%;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* ****** */
+/* Header */
+/* ****** */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_nom{
+    height: 200px;
+    width: 1000px;
+}
+
+.nom_logo{
+    display: flex;
+}
+
+.logo{
+    height: 200px;
+    width: 300px;
+    padding: 30px;
+}
+
+.nom{
+    padding: 15px 0;
+    width: 500px;
+    height: 200px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 500px;
+}
+
+.page{
+    border: 2px black solid;
+    border-radius: 20px;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+}
+
+.page input{
+    border: none;
+    height: 55px;
+    width: 320px;
+    font-size: 30px;
+}
+
+
+/* *** */
+/* Nav */
+/* *** */
+
+nav{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background-color: rgb(120, 170, 204);
+    display: flex;
+    justify-content: center;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.anav{
+    padding: 0 30px;
+    line-height: 65px;
+    color: black;
+}
+
+.anav:hover{
+    background-color: blue;
+}
+
+.active{
+    border-top: 15px blue solid;
+    line-height: 35px;
+}
+
+.dropdown{
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    position: relative;
+}
+
+.dropdown_button{
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    width: 120px;
+    position: relative;
+}
+
+.dropdown:hover .element_dropdown{
+    display: block;
+}
+
+.element_dropdown{
+    display: none;
+    background-color: rgb(120, 170, 204);
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.element_dropdown a{
+    display: block;
+}
+
+.dropdown_nav{
+    width: 180px;
+    text-align: center;
+}
+
+.dropdown_nav:hover{
+    background-color: blue;
+}
+
+/* ***** */
+/* Index */
+/* ***** */
+
+.index{
+    border: 2px black solid;
+    border-radius: 20px;
+    width: 700px;
+    height: 60px;
+    text-align: center;
+}
+
+.index input{
+    border: none;
+    height: 55px;
+    width: 620px;
+    font-size: 30px;
+}
+
+.conteneur{
+    display: flex;
+}
+
+.conteneur div{
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    margin: 30px 30px 0 30px;
+    background-color: rgb(193, 231, 243);
+}
+
+.index_livre{
+    background: no-repeat center/90% url("../image/Livre.jpg");
+}
+
+.index_auteur{
+    background: no-repeat center/90% url("../image/auteur.jpg");
+}
+
+.index_editeur{
+    background: no-repeat center/90% url("../image/Editeur.jpg");
+}
+
+.conteneur div p{
+    line-height: 700px;
+    font-size: 60px;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+}
+
+
+/* ******** */
+/* Editeurs */
+/* ******** */
+
+.conteneur_editeurs{
+    display: flex;
+    height: 300px;
+    width: 700px;
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 40px;
+    padding-left: 50px;
+    background-color: rgb(193, 231, 243);
+    margin: 10px;
+    transition: all 0.1s linear;
+}
+
+.conteneur_editeurs:hover{
+    margin-right: 300px;
+}
+
+.image_editeurs{
+    margin: auto 0;
+    height: 200px;
+}
+
+.info_editeur{
+    margin: auto;
+}
+
+
+/* ******* */
+/* Editeur */
+/* ******* */
+
+.conteneur_tout_editeur{
+    width: 1300px;
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 40px;
+    background-color: rgb(193, 231, 243);
+}
+
+.conteneur_image_info{
+    display: flex;
+}
+
+.image_editeur{
+    height: 250px;
+    margin: 10px 30px;
+}
+
+.nom_editeur{
+    font-size: 90px;
+}
+
+.modif_suppr{
+    padding-top: 30px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.modif, .suppr{
+    color: red;
+    font-weight: bold;
+}
+
+.conteneur_livres_dediteur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.livres_editeur{
+    display: flex;
+    margin: 10px 0 10px 0;
+    width: 630px;
+    height: 300px;
+    border: 3px black solid;
+    border-radius: 40px;
+}
+
+.image_livre_editeur{
+    height: 250px;
+    margin: auto 20px;
+}
+
+
+
+/* ******* */
+/* Auteurs */
+/* ******* */
+
+.conteneur_auteurs{
+    display: flex;
+    height: 300px;
+    width: 700px;
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 40px;
+    padding-left: 50px;
+    background-color: rgb(193, 231, 243);
+    margin: 10px;
+    transition: all 0.1s linear;
+}
+
+.conteneur_auteurs:hover{
+    margin-right: 300px;
+}
+
+.image_auteurs{
+    margin: auto 0;
+    height: 250px;
+}
+
+.info_auteur{
+    margin: auto;
+}
+
+h1{
+    font-size: 40px;
+}
+
+
+
+
+/* ****** */
+/* Auteur */
+/* ****** */
+
+.conteneur_tout_auteur{
+    width: 1300px;
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 40px;
+    background-color: rgb(193, 231, 243);
+}
+
+.image_auteur{
+    height: 500px;
+    margin: 10px 30px;
+}
+
+.nom_auteur{
+    font-size: 50px;
+}
+
+.naissance{
+    margin: 15px 0 30px 0;
+    font-size: 20px;
+}
+
+.biographie{
+    margin: 30px;
+}
+
+.conteneur_livres_dauteur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.livres_auteur{
+    display: flex;
+    margin: 10px 0 10px 0;
+    width: 630px;
+    height: 300px;
+    border: 3px black solid;
+    border-radius: 40px;
+}
+
+.image_livre_auteur{
+    height: 250px;
+    margin: auto 20px;
+}
+
+
+
+
+/* ****** */
+/* Livres */
+/* ****** */
+
+
+.conteneur_livres{
+    display: flex;
+    height: 300px;
+    width: 700px;
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 40px;
+    padding-left: 50px;
+    background-color: rgb(193, 231, 243);
+    margin: 10px;
+    transition: all 0.1s linear;
+}
+
+.conteneur_livres:hover{
+    margin-right: 300px;
+}
+
+.image_livres{
+    margin: auto 0;
+    height: 250px;
+}
+
+.info_livres{
+    margin: auto 5px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.prix{
+    margin: 15px 0 30px 0;
+    font-size: 20px;
+}
+
+
+/* ***** */
+/* Livre */
+/* ***** */
+
+.conteneur_livre{
+    width: 1300px;
+    height: 550px;
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 40px;
+    background-color: rgb(193, 231, 243);
+    display: flex;
+}
+
+.image_livre{
+    height: 500px;
+    margin: auto 30px;
+}
+
+.titre_livre{
+    margin-top: 10px;
+    font-size: 50px;
+}
+
+.prix_isbn,
+.auteur_editeur_livre{
+    margin: 15px 0 30px 0;
+    font-size: 20px;
+}
+
+.resume{
+    font-size: 18px;
+    margin: 0 40px 30px 0
+}
+
+.au_ed{
+    color: blue;
+}
+
+.au_ed:hover{
+    color: blueviolet;
+}
+
+/* ********* */
+/* Recherche */
+/* ********* */
+
+#OK{
+    display: none;
+}
+
+.notre_recherche{
+    margin-top: 15px;
+}
+
+.notre_recherche i{
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* ****** */
+/* Footer */
+/* ****** */
+
+.foot{
+    position: absolute;
+    bottom: 0;
+}
+
+.conteneur_fleche{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    color: black;
+    font-size: 50px;
+}
+
+footer{
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+/* ********** */
+/* Formulaire */
+/* ********** */
+
+.main_formulaire{
+    margin: 10px;
+}
+
+.formulaire {
+    width: 1000px;
+    height: 600px;
+    border: 3px rgb(14, 126, 201) solid;
+    border-radius: 40px;
+    background-color: rgb(193, 231, 243);
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formulaire input{
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+select{
+    font-size: 20px;
+}
+
+.textarea{
+    margin-left: 50px;
+}
+
+input[type="file"] {
+    font-size: 15px;
+}
+.need_submit {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.need_submit input{
+    height: 50px;
+    width: 500px;
+}
+
+.need {
+    color: red;
+}
+
+.needmessage {
+    color: red;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.need_submit p{
+    color: red;
+    font-size: 15px;
+}
+
+input[type="date"]{
+    font-size: 15px;
+}
+
+input[type="submit"]{
+    margin-left: unset;
+}
+
+/* ***** */
+/* suppr */
+/* ***** */
+
+.form_suppr{
+    align-items: center;
+}
+
+.p_suppr{
+    text-align: center;
+}
+
+.btn_garder{
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+    font-family: inherit;
+    background-color: #C1E7F3;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn_garder:hover{
+    background-color: green;
+}
+
+.btn_suppr{
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+    font-family: inherit;
+    background-color: #C1E7F3;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn_suppr:hover{
+    background-color: red;
+}

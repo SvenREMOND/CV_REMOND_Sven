@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(17, 214, 221);
+}
+
+div {
+    display: table;
+    margin: auto;
+    width: 960px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+figure {
+    display: inline-block
+}
+
+img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+figcaption>p {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+}
+
+figure:hover{
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(77, 204, 19);
+}
