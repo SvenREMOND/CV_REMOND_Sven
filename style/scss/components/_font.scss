@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "Unisono";
+    src: url("../scss/font/Unisono_Quickpath.otf") format("opentype");
+}
+
+$fs-titre: "Unisono";
+
+@font-face{
+    font-family: "Source-code";
+    src: url("../scss/font/Source_code.otf") format("opentype");
+}
+
+$fs: "Source-code";
+
+@font-face{
+    font-family: "Myriad";
+    src: url("../scss/font/Myriad_Pro.otf") format("opentype");
+}
+
+$fs-soustitre: "Myriad";

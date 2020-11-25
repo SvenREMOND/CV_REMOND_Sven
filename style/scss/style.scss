@@ -1,0 +1,66 @@
+/*
+
+Breakpoint :
+    600 et moin
+    600 à 768
+    768 à 992
+    992 à 1200
+    1200 et plus
+
+Couleur :
+    gris: #A9ACAB
+    clic: #062F4A
+    hover: #38383A
+    actif: #3F3F46
+
+*/
+
+$blanc: white;
+$titre: #5881b3;
+$sous-titre: #967367;
+$dark: #252526;
+$darker: #1e1e1e;
+
+@import "./utils/_reset.scss";
+@import "./components/_font";
+
+/* Lissage du scroll */
+html {
+    scroll-behavior: smooth;
+    font-family: $fs;
+}
+
+.container {
+	background-color: $darker;
+	color: $blanc;
+	font-size: 1rem;
+}
+
+h3 {
+	display: block;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
+    color: $titre;
+    font-family: $fs-soustitre;
+	font-style: $fs-soustitre;
+	font-size: 2rem;
+	background-color: $dark;
+    padding: 0.5rem;
+}
+
+h4 {
+	display: block;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
+    color: $sous-titre;
+    font-family: $fs-soustitre;
+	font-style: $fs-soustitre;
+	font-size: 1.5rem;
+	background-color: $dark;
+	padding: 0.5rem;
+}
+
+@import "./components/_accueil";
+@import "./components/_profile";

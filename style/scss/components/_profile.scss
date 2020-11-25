@@ -1,0 +1,55 @@
+.Profil {
+	&__presentation {
+		p {
+			padding: 2vw;
+		}
+	}
+
+	&__cursus {
+		margin: 1.5rem;
+		padding: 0.5rem;
+		border: 0.3rem solid $dark;
+		border-radius: 1rem;
+		-webkit-border-radius: 1rem;
+		-moz-border-radius: 1rem;
+		-ms-border-radius: 1rem;
+		-o-border-radius: 1rem;
+
+		&--name {
+			font-size: 1.3rem;
+			padding-bottom: 1rem;
+		}
+
+		&--description {
+			padding-left: 1rem;
+			p {
+				margin: 0.6rem 0;
+			}
+		}
+
+		&--place {
+			i {
+				color: $titre;
+			}
+		}
+
+		&--date {
+			i {
+				color: $titre;
+			}
+		}
+
+		&--link {
+			text-align: center;
+			font-size: 2rem;
+			color: blue;
+		}
+	}
+
+	&__competence {
+		&--portfolio {
+			text-align: center;
+			margin: 1.5rem;
+		}
+	}
+}
