@@ -3,8 +3,8 @@
 
 Breakpoint :
     600 à 768
-    768 à 1400
-    1400 et plus
+    768 à 1024
+    1024 et plus
 
 Couleur :
     gris: #A9ACAB
@@ -483,6 +483,12 @@ html {
   font-size: 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    font-size: 1.5rem;
+  }
+}
+
 img {
   max-width: 100vw;
 }
@@ -501,6 +507,12 @@ h3 {
   padding: 0.5rem;
 }
 
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
 h4 {
   z-index: 2;
   display: block;
@@ -513,6 +525,12 @@ h4 {
   font-size: 1.5rem;
   background-color: #252526;
   padding: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 2rem;
+  }
 }
 
 .Accueil {
@@ -617,8 +635,8 @@ h4 {
 .Profil__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -694,8 +712,8 @@ h5 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -webkit-column-gap: 20px;
           column-gap: 20px;
 }
