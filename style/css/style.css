@@ -737,6 +737,12 @@ h5 {
   color: white;
 }
 
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox {
+    height: 60px;
+  }
+}
+
 .row100 .inputBox input {
   position: absolute;
   width: 97%;
@@ -746,10 +752,16 @@ h5 {
           box-shadow: none;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 1rem;
   padding-left: 10px;
   z-index: 1;
   color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox input {
+    font-size: 1.5rem;
+  }
 }
 
 .row100 .inputBox .text {
@@ -757,7 +769,7 @@ h5 {
   top: 0;
   left: 0;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 1rem;
   padding: 0 10px;
   display: block;
   pointer-events: none;
@@ -766,6 +778,14 @@ h5 {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox .text {
+    height: 60px;
+    font-size: 1.5rem;
+    line-height: 60px;
+  }
 }
 
 .row100 .inputBox .line {
@@ -788,9 +808,21 @@ h5 {
   -o-border-radius: 5px;
 }
 
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox .line {
+    height: 4px;
+  }
+}
+
 .row100 .inputBox input:focus + .text {
   top: -35px;
   left: -10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox input:focus + .text {
+    top: -45px;
+  }
 }
 
 .row100 .inputBox input:focus ~ .line {
@@ -800,6 +832,12 @@ h5 {
 .row100 .inputBox input:valid + .text {
   top: -35px;
   left: -10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox input:valid + .text {
+    top: -45px;
+  }
 }
 
 .row100 .inputBox input:valid ~ .line {
@@ -823,15 +861,27 @@ h5 {
           box-shadow: none;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 1rem;
   padding-left: 10px;
   z-index: 1;
   color: white;
 }
 
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox.textarea textarea {
+    font-size: 1.5rem;
+  }
+}
+
 .row100 .inputBox.textarea textarea:focus + .text {
   top: -35px;
   left: -10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox.textarea textarea:focus + .text {
+    top: -45px;
+  }
 }
 
 .row100 .inputBox.textarea textarea:focus ~ .line {
@@ -841,6 +891,12 @@ h5 {
 .row100 .inputBox.textarea textarea:valid + .text {
   top: -35px;
   left: -10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .row100 .inputBox.textarea textarea:valid + .text {
+    top: -45px;
+  }
 }
 
 .row100 .inputBox.textarea textarea:valid ~ .line {
@@ -854,33 +910,38 @@ h5 {
 .button {
   margin-left: 2vh;
   position: relative;
+  width: 10vw;
 }
 
 .button__fill {
+  display: block;
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   height: 100%;
   width: 0%;
   background-color: #5881b3;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
 }
 
 .button__btn {
+  width: 100%;
   position: relative;
+  z-index: 1;
   outline: none;
   background: transparent;
   border: 4px solid #5881b3;
-  padding: 1.5vh 50px;
+  padding: 1.5vh 0;
   color: white;
 }
 
-.button__btn:hover ~ .button__fill {
-  width: 51%;
+.button__btn:hover .button__fill {
+  width: 100%;
 }
 
 footer {
