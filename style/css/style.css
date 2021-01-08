@@ -2,11 +2,9 @@
 /*
 
 Breakpoint :
-    600 et moin
     600 à 768
-    768 à 992
-    992 à 1200
-    1200 et plus
+    768 à 1400
+    1400 et plus
 
 Couleur :
     gris: #A9ACAB
@@ -476,6 +474,7 @@ textarea {
 html {
   scroll-behavior: smooth;
   font-family: "Source Code Pro";
+  overflow-x: hidden;
 }
 
 .container {
@@ -577,6 +576,7 @@ h4 {
 }
 
 .Profil__cursus {
+  background-color: #252526;
   margin: 1.5rem;
   padding: 2vw;
   border: 0.3rem solid #252526;
@@ -614,10 +614,22 @@ h4 {
   color: blue;
 }
 
+.Profil__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
 .Profil__competence {
-  margin: 1rem;
+  margin: 1.5rem;
   padding: 2vw;
   border: 0.3rem solid #252526;
+  background-color: #252526;
   text-align: center;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -634,6 +646,13 @@ h4 {
 h5 {
   font-weight: bold;
   padding-bottom: 0.5vh;
+}
+
+.Contact {
+  /* &__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	} */
 }
 
 .Contact__info {
@@ -675,8 +694,10 @@ h5 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[autofit];
-      grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .row100 .col {
@@ -806,6 +827,10 @@ h5 {
 
 .row100 .inputBox.textarea textarea:valid ~ .line {
   height: 100%;
+}
+
+.row {
+  display: block;
 }
 
 .button {

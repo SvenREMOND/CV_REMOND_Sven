@@ -10,6 +10,7 @@
 	}
 
 	&__cursus {
+		background-color: $dark;
 		margin: 1.5rem;
 		padding: 2vw;
 		border: 0.3rem solid $dark;
@@ -50,10 +51,18 @@
 		}
 	}
 
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		align-items: center;
+		justify-items: center;
+	}
+
 	&__competence {
-		margin: 1rem;
+		margin: 1.5rem;
 		padding: 2vw;
 		border: 0.3rem solid $dark;
+		background-color: $dark;
 		text-align: center;
 		border-radius: 1rem;
 		-webkit-border-radius: 1rem;

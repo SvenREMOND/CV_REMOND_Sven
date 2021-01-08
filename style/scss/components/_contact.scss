@@ -4,6 +4,11 @@ h5 {
 }
 
 .Contact {
+	/* &__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	} */
+
 	&__info {
 		padding: 2vw;
 
@@ -47,7 +52,8 @@ h5 {
 	position: relative;
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	column-gap: 20px;
 
 	.col {
 		position: relative;
@@ -180,6 +186,10 @@ h5 {
 			}
 		}
 	}
+}
+
+.row{
+    display: block;
 }
 
 .button {
