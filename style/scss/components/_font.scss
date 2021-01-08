@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "Unisono";
+	src: url("../scss/font/Unisono_Quickpath.otf") format("opentype");
+}
+
+$fs-titre: "Unisono";
+
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,900,900italic);
+
+$fs: "Source Code Pro";
+
+@font-face {
+	font-family: "Myriad";
+	src: url("../scss/font/Myriad_Pro.otf") format("opentype");
+}
+
+$fs-soustitre: "Myriad";

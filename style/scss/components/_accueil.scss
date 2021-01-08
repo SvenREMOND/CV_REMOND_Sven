@@ -1,0 +1,40 @@
+.Accueil {
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__info {
+		&--nom {
+			font-family: $fs-titre;
+			font-size: 5rem;
+			color: $titre;
+		}
+
+		&--logo {
+			width: 50vw;
+			padding-bottom: 20px;
+		}
+
+		&--metier {
+			font-family: $fs-soustitre;
+			font-size: 1.5rem;
+			color: $sous-titre;
+		}
+	}
+
+	&__down {
+		font-size: 3rem;
+        position: absolute;
+        width: 100vw;
+		bottom: 2vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		a {
+			text-decoration: none;
+			color: $blanc;
+		}
+	}
+}

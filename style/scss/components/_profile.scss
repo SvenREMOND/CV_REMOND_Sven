@@ -1,0 +1,78 @@
+.noSticky {
+	position: initial !important;
+}
+
+.Profil {
+	&__presentation {
+		p {
+			padding: 2vw;
+		}
+	}
+
+	&__cursus {
+		background-color: $dark;
+		margin: 1.5rem;
+		padding: 2vw;
+		border: 0.3rem solid $dark;
+		border-radius: 1rem;
+		-webkit-border-radius: 1rem;
+		-moz-border-radius: 1rem;
+		-ms-border-radius: 1rem;
+		-o-border-radius: 1rem;
+
+		&--name {
+			font-size: 1.3rem;
+			padding-bottom: 1rem;
+		}
+
+		&--description {
+			padding-left: 1rem;
+			p {
+				margin: 0.6rem 0;
+			}
+		}
+
+		&--place {
+			i {
+				color: $titre;
+			}
+		}
+
+		&--date {
+			i {
+				color: $titre;
+			}
+		}
+
+		&--link {
+			text-align: center;
+			font-size: 2rem;
+			color: blue;
+		}
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		align-items: center;
+		justify-items: center;
+	}
+
+	&__competence {
+		margin: 1.5rem;
+		padding: 2vw;
+		border: 0.3rem solid $dark;
+		background-color: $dark;
+		text-align: center;
+		border-radius: 1rem;
+		-webkit-border-radius: 1rem;
+		-moz-border-radius: 1rem;
+		-ms-border-radius: 1rem;
+		-o-border-radius: 1rem;
+
+		img {
+			width: 100%;
+			padding-bottom: 1rem;
+		}
+	}
+}

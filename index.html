@@ -1,47 +1,296 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/bf96a16ec0.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Sven REMOND | Developpeur</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/bf96a16ec0.js" crossorigin="anonymous"></script>
-    <title>CV | REMOND Sven</title>
-</head>
+	<body>
+		<main class="container">
+			<section class="Accueil">
+				<!-- Full height: nom + metier -->
+				<div class="Accueil__info">
+					<h1 class="Accueil__info--nom">REMOND Sven</h1>
+					<img
+						class="Accueil__info--logo"
+						src="./Images/SVG/Logo-blanc-Simplifier.svg"
+						alt="Logo de REMOND Sven composé de 3 lettre 'SDW' voulant dire Sven Développeur WEB"
+					/>
+					<h2 class="Accueil__info--metier">Apprenti developpeur Web</h2>
+				</div>
+			</section>
+			<p class="Accueil__down">
+				<a href="#Profil" class="fas fa-angle-double-down"></a>
+			</p>
 
-<body>
+			<!-- Profil: presentation de moi + cursus + Compétence -->
+			<section id="Profil" class="Profil">
+				<!-- Présentation -->
+				<div class="Profil__presentation">
+					<h3>Moi</h3>
+					<p>Bonjour je m'appelle Sven et j'ai <span id="age"></span></p>
+					<p>Je suis passioné de technologie</p>
+				</div>
 
-    <div class="wrap">
+				<!-- Cursus -->
+				<div>
+					<h3>Mon Cursus</h3>
+					<div class="Profil__cursus">
+						<p class="Profil__cursus--name">DUT MMI</p>
+						<div class="Profil__cursus--description">
+							<p class="Profil__cursus--place">
+								<i class="fas fa-map-marker-alt"></i> IUT de Haguenau
+							</p>
+							<p class="Profil__cursus--date">
+								<i class="fas fa-calendar"></i> en cours
+							</p>
+							<p class="Profil__cursus--link">
+								<a><i class="fas fa-award"></i></a>
+							</p>
+						</div>
+					</div>
 
-        <nav>
+					<div class="Profil__cursus">
+						<p class="Profil__cursus--name">MOOC sur la cybersécurité</p>
+						<div class="Profil__cursus--description">
+							<p class="Profil__cursus--place">
+								<i class="fas fa-map-marker-alt"></i> ANSII
+							</p>
+							<p class="Profil__cursus--date">
+								<i class="fas fa-calendar"></i> 2020
+							</p>
+							<p class="Profil__cursus--link">
+								<a
+									download="Diplôme SECMNUM REMOND"
+									href="./Téléchargement/attestation_secnumacademie.pdf"
+								>
+									<i class="fas fa-award"></i>
+								</a>
+							</p>
+						</div>
+					</div>
 
-            <div class="logo"></div>
+					<div class="Profil__cursus">
+						<p class="Profil__cursus--name">BAC STI2D Spécialité ITEC</p>
+						<div class="Profil__cursus--description">
+							<p class="Profil__cursus--place">
+								<i class="fas fa-map-marker-alt"></i> Lycée Blaise Pascal,
+								Colmar
+							</p>
+							<p class="Profil__cursus--date">
+								<i class="fas fa-calendar"></i> 2017 - 2019
+							</p>
+							<p class="Profil__cursus--link">
+								<a
+									download="Relevé BAC REMOND Sven"
+									href="./Téléchargement/Relevé_Bac.jpeg"
+								>
+									<i class="fas fa-award"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
 
-            <ul>
-                <li class="actif"><a href="./index.html"><i class="fab fa-html5"></i>Acceuil</a></li>
-                <li><a href="./Profil.html"><i class="fab fa-html5"></i>Profil</a></li>
-                <li><a href="./Portfolio.html"><i class="fab fa-html5"></i>Portfolio</a></li>
-                <li><a href="./contact.html"><i class="fab fa-html5"></i>Contact</a></li>
-            </ul>
+				<!-- <p class="Profil__competence--portfolio">
+                    <button>Mes réalisation</button>
+                </p> -->
+				<!-- Compétence -->
+				<div>
+					<h3 class="noSticky">Mes compétences</h3>
 
-        </nav>
+					<div>
+						<h4>Back-end</h4>
 
-        <main class="full">
+						<div class="Profil__grid">
+							<div class="Profil__competence">
+								<img src="./Images/Logo_php.png" alt="Logo PHP" />
+								<p>PHP</p>
+							</div>
+							<div class="Profil__competence">
+								<img src="./Images/Logo_mysql.jpg" alt="Logo MySQL" />
+								<p>MySQL</p>
+							</div>
+							<div class="Profil__competence">
+								<img src="./Images/Logo_nodejs.jpg" alt="Logo nodJS" />
+								<p>NodeJS (LaravelMix)</p>
+							</div>
+						</div>
+					</div>
 
-            <div class="page_activ">
-                <p class="nav"><i class="fab fa-html5"></i>Acceuil</p>
-            </div>
+					<div>
+						<h4>Front-end</h4>
+						<div class="Profil__grid">
+							<div class="Profil__competence">
+								<img src="./Images/Logo_HTML.png" alt="Logo HTML 5" />
+								<p>HTML</p>
+							</div>
+							<div class="Profil__competence">
+								<img src="./Images/Logo_CSS.png" alt="Logo CSS 3" />
+								<p>CSS</p>
+							</div>
+							<div class="Profil__competence">
+								<img src="./Images/Logo_JS.png" alt="Logo JS" />
+								<p>JavaScript</p>
+							</div>
+						</div>
+					</div>
 
-            <div class="acceuil_flex">
-                <h1 class="acceuil nom">REMOND Sven</>
-                <h2 class="acceuil metier">Apprenti developpeur Web</h2>
-                <a class="download" href="./Téléchargement/CV_REMOND.pdf" download="CV_REMOND">Télécharger mon CV</a>
-            </div>
+					<div>
+						<h4>Les outils que j'utilise</h4>
 
-        </main>
-        
-    </div>
+						<div class="Profil__grid">
+							<div class="Profil__competence">
+								<img src="./Images/Logo_git.png" alt="Logo Git" />
+								<p>Git / Gitflow</p>
+							</div>
+							<div class="Profil__competence">
+								<img src="./Images/Logo_github.png" alt="Logo Github" />
+								<p>Github</p>
+							</div>
+							<div class="Profil__competence">
+								<img src="./Images/Logo_sass.png" alt="Logo SASS" />
+								<p>SASS</p>
+							</div>
+						</div>
+					</div>
 
-</body>
+					<div>
+						<h4>J'ai déjà utiliser</h4>
 
+						<div class="Profil__grid">
+							<div class="Profil__competence">
+								<img
+									src="./Images/Logo_Illustrator.png"
+									alt="Logo Illustrator"
+								/>
+								<p>Illustrator</p>
+							</div>
+							<div class="Profil__competence">
+								<img src="./Images/Logo_Photoshop.png" alt="Logo Photoshop" />
+								<p>Photoshop</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="Contact">
+				<h3>Me contacter</h3>
+				<!-- Contact -->
+				<div class="Contact__grid">
+					<div class="Contact__info">
+						<div class="Contact__info--item Contact__info--adresse">
+							<h5>Adresse</h5>
+							<p>3 Rue de Louvain</p>
+							<p>67000 Strasbourg</p>
+						</div>
+
+						<div class="Contact__info--item Contact__info--tel">
+							<h5>Téléphone</h5>
+							<p><a href="tel:0650188953">06.50.18.89.53</a></p>
+						</div>
+
+						<div class="Contact__info--item Contact__info--mail">
+							<h5>Mail</h5>
+							<p>
+								<a href="mailto:sven.remond.sti2@gmail.com"
+									>sven.remond.sti2@gmail.com</a
+								>
+							</p>
+						</div>
+
+						<div class="Contact__info--item">
+							<p>
+								<a
+									class="Contact__info--cv"
+									href="./Téléchargement/CV_REMOND.pdf"
+									download="CV_REMOND"
+									><i class="fas fa-file-download"></i> Télécharger mon CV</a
+								>
+							</p>
+						</div>
+						<div class="Contact__info--item Contact__info--link">
+							<h5>Link</h5>
+							<p>
+								<a
+									target="_blank"
+									href="https://www.linkedin.com/in/sven-remond"
+									><i class="fab fa-linkedin"></i
+								></a>
+								<a target="_blank" href="https://github.com/SvenREMOND"
+									><i class="fab fa-github-square"></i
+								></a>
+							</p>
+						</div>
+					</div>
+
+					<form class="Contact__form" action="mail.php" method="POST">
+						<div class="row100">
+							<div class="col">
+								<div class="inputBox">
+									<input type="text" name="lastname" required />
+									<span class="text">Nom</span>
+									<span class="line"></span>
+								</div>
+							</div>
+							<div class="col">
+								<div class="inputBox">
+									<input type="text" name="firstname" required />
+									<span class="text">Prénom</span>
+									<span class="line"></span>
+								</div>
+							</div>
+						</div>
+						<div class="row100">
+							<div class="col">
+								<div class="inputBox">
+									<input type="email" name="email" required />
+									<span class="text">Mail</span>
+									<span class="line"></span>
+								</div>
+							</div>
+							<div class="col">
+								<div class="inputBox">
+									<input type="text" name="object" required />
+									<span class="text">Objet</span>
+									<span class="line"></span>
+								</div>
+							</div>
+						</div>
+						<div class="row100 row">
+							<div class="col">
+								<div class="inputBox textarea">
+									<textarea name="message" required></textarea>
+									<span class="text">Message</span>
+									<span class="line"></span>
+								</div>
+							</div>
+						</div>
+						<div class="button">
+							<span class="button__fill"></span>
+							<input
+								class="button__btn"
+								name="mail"
+								type="submit"
+								value="Envoyer"
+							/>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>Sven REMOND. Tous droits réservés</p>
+		</footer>
+
+		<script src="./JS/main.js"></script>
+	</body>
 </html>
