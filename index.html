@@ -8,6 +8,76 @@
 			src="https://kit.fontawesome.com/bf96a16ec0.js"
 			crossorigin="anonymous"
 		></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"version": "1.0",
+				"url": "https://svenremond.github.io/",
+				"about": {
+					"@type": "Thing",
+					"description": "The resume of REMOND Sven, a French Web Developper"
+				},
+				"author": {
+					"@type": "Person",
+					"name": "REMOND Sven",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Strasbourg",
+						"postalCode": "67000",
+						"addressCountry": "France"
+					},
+					"email": "mailto:sven.remond.sti2@gmail.com",
+					"jobTitle": "Web Developper",
+					"url": "https://svenremond.github.io/",
+					"gender": "Male"
+				}
+			}
+		</script>
+
+		<script
+			type="text/javascript"
+			src="/tarteaucitron/tarteaucitron.js"
+		></script>
+
+		<script type="text/javascript">
+			tarteaucitron.init({
+				privacyUrl: "" /* Privacy policy url */,
+
+				hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
+				cookieName: "tarteaucitron" /* Cookie name */,
+
+				orientation: "middle" /* Banner position (top - bottom) */,
+
+				showAlertSmall: false /* Show the small banner on bottom right */,
+				cookieslist: false /* Show the cookie list */,
+
+				showIcon: true /* Show cookie icon to manage cookies */,
+				iconPosition:
+					"BottomRight" /* BottomRight, BottomLeft, TopRight and TopLeft */,
+
+				adblocker: false /* Show a Warning if an adblocker is detected */,
+
+				DenyAllCta: true /* Show the deny all button */,
+				AcceptAllCta: true /* Show the accept all button when highPrivacy on */,
+				highPrivacy: true /* HIGHLY RECOMMANDED Disable auto consent */,
+
+				handleBrowserDNTRequest: false /* If Do Not Track == 1, disallow all */,
+
+				removeCredit: false /* Remove credit link */,
+				moreInfoLink: true /* Show more info link */,
+
+				useExternalCss: false /* If false, the tarteaucitron.css file will be loaded */,
+				useExternalJs: false /* If false, the tarteaucitron.js file will be loaded */,
+
+				//"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+
+				readmoreLink: "" /* Change the default readmore link */,
+
+				mandatory: true /* Show a message about mandatory cookies */,
+			});
+		</script>
+
 		<title>Sven REMOND | Developpeur</title>
 	</head>
 
@@ -118,7 +188,7 @@
 								<p>MySQL</p>
 							</div>
 							<div class="Profil__competence">
-								<img src="./Images/Logo_nodejs.jpg" alt="Logo nodJS" />
+								<img src="./Images/Logo_nodejs.png" alt="Logo nodJS" />
 								<p>NodeJS (LaravelMix)</p>
 							</div>
 						</div>
@@ -189,13 +259,13 @@
 							</div>
 							<div class="Profil__competence">
 								<img
-									src="./Images/Logo_Illustrator.jpg"
+									src="./Images/Logo_Illustrator.png"
 									alt="Logo Illustrator"
 								/>
 								<p>Illustrator</p>
 							</div>
 							<div class="Profil__competence">
-								<img src="./Images/Logo_Photoshop.jpg" alt="Logo Photoshop" />
+								<img src="./Images/Logo_Photoshop.png" alt="Logo Photoshop" />
 								<p>Photoshop</p>
 							</div>
 							<div class="Profil__competence">
@@ -207,13 +277,13 @@
 							</div>
 							<div class="Profil__competence">
 								<img
-									src="./Images/Logo_PremierePro.jpg"
+									src="./Images/Logo_PremierePro.png"
 									alt="Logo Premiere Pro"
 								/>
 								<p>Premiere Pro</p>
 							</div>
 							<div class="Profil__competence">
-								<img src="./Images/Logo_Xd.jpg" alt="Logo Xd" />
+								<img src="./Images/Logo_Xd.png" alt="Logo Xd" />
 								<p>Xd</p>
 							</div>
 							<div class="Profil__competence">
@@ -338,5 +408,19 @@
 		</footer>
 
 		<script src="./JS/main.js"></script>
+
+		<!-- Script Tarte au citron -->
+		<script type="text/javascript">
+			tarteaucitron.user.gtagUa = "G-G37XWST2QF";
+			tarteaucitron.user.gtagMore = function () {
+				/* add here your optionnal gtag() */
+			};
+			(tarteaucitron.job = tarteaucitron.job || []).push("gtag");
+		</script>
+
+		<script type="text/javascript">
+			tarteaucitron.user.yandexmetrica = "71077297";
+			(tarteaucitron.job = tarteaucitron.job || []).push("metrica");
+		</script>
 	</body>
 </html>
