@@ -910,7 +910,7 @@ h5 {
 .button {
   margin-left: 2vh;
   position: relative;
-  width: 10vw;
+  width: 200px;
 }
 
 .button__fill {
@@ -922,11 +922,11 @@ h5 {
   height: 100%;
   width: 0%;
   background-color: #5881b3;
-  transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -ms-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
+  transition: all 0.5s cubic-bezier(0.9, 0.03, 0.69, 0.22);
+  -webkit-transition: all 0.5s cubic-bezier(0.9, 0.03, 0.69, 0.22);
+  -moz-transition: all 0.5s cubic-bezier(0.9, 0.03, 0.69, 0.22);
+  -ms-transition: all 0.5s cubic-bezier(0.9, 0.03, 0.69, 0.22);
+  -o-transition: all 0.5s cubic-bezier(0.9, 0.03, 0.69, 0.22);
 }
 
 .button__btn {
