@@ -1,6 +1,6 @@
 <?php
 
-$to = "sven.remond.sti2@gmail.com";
+$to = "sven@sven-remond.fr";
 
 $object = $_POST['object'];
 
