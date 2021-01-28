@@ -481,6 +481,10 @@ html {
   background-color: #1e1e1e;
   color: white;
   font-size: 1rem;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -590,7 +594,8 @@ h4 {
 }
 
 .Profil__presentation p {
-  padding: 2vw;
+  padding: 1vw;
+  line-height: 1.5vw;
 }
 
 .Profil__cursus {
@@ -635,8 +640,8 @@ h4 {
 .Profil__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -664,13 +669,6 @@ h4 {
 h5 {
   font-weight: bold;
   padding-bottom: 0.5vh;
-}
-
-.Contact {
-  /* &__grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	} */
 }
 
 .Contact__info {
@@ -942,6 +940,51 @@ h5 {
 
 .button__btn:hover .button__fill {
   width: 100%;
+}
+
+.containerCreation {
+  background-color: #252526;
+  margin: 1.5rem;
+  padding: 2vw;
+  border: 0.3rem solid #252526;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerCreation__image {
+  min-width: 20%;
+  max-width: 40%;
+  height: 100%;
+}
+
+.containerCreation__text {
+  line-height: 1.5vw;
+  font-size: 1rem;
+}
+
+.containerCreation__text--titre {
+  font-size: 1.2rem;
+  font-family: "Myriad";
+  font-style: "Myriad";
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCreation__text--titre {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCreation__text {
+    font-size: 1.5rem;
+  }
 }
 
 footer {

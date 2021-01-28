@@ -1,106 +1,185 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="canonical" href="https://sven-remond.fr" />
+		<link rel="stylesheet" href="style/css/style.css" />
+		<script src="https://kit.fontawesome.com/bf96a16ec0.js" crossorigin="anonymous"></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"version": "1.0",
+				"url": "https://www.sven-remond.fr/Portfolio.html",
+				"about": {
+					"@type": "Thing",
+					"description": "The resume of REMOND Sven, a French Web Developper"
+				},
+				"author": {
+					"@type": "Person",
+					"name": "REMOND Sven",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Strasbourg",
+						"postalCode": "67000",
+						"addressCountry": "France"
+					},
+					"email": "mailto:sven.remond.sti2@gmail.com",
+					"jobTitle": "Web Developper",
+					"url": "https://www.sven-remond.fr",
+					"gender": "Male"
+				}
+			}
+		</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/bf96a16ec0.js" crossorigin="anonymous"></script>
-    <title>CV | REMOND Sven</title>
-</head>
+		<script type="text/javascript" src="./JS/tarteaucitron.js-1.8.3/tarteaucitron.js"></script>
 
-<body>
+		<script type="text/javascript">
+			tarteaucitron.init({
+				privacyUrl: "" /* Privacy policy url */,
 
-    <div class="wrap">
+				hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
+				cookieName: "tarteaucitron" /* Cookie name */,
 
-        <nav>
+				orientation: "middle" /* Banner position (top - bottom) */,
 
-            <div class="logo"></div>
+				showAlertSmall: false /* Show the small banner on bottom right */,
+				cookieslist: false /* Show the cookie list */,
 
-            <ul>
-                <li><a href="./index.html"><i class="fab fa-html5"></i>Acceuil</a></li>
-                <li><a href="./Profil.html"><i class="fab fa-html5"></i>Profil</a></li>
-                <li class="actif"><a href="./Portfolio.html"><i class="fab fa-html5"></i>Portfolio</a></li>
-                <li><a href="./contact.html"><i class="fab fa-html5"></i>Contact</a></li>
-            </ul>
+				showIcon: true /* Show cookie icon to manage cookies */,
+				iconPosition: "BottomRight" /* BottomRight, BottomLeft, TopRight and TopLeft */,
 
-        </nav>
+				adblocker: false /* Show a Warning if an adblocker is detected */,
 
-        <main>
+				DenyAllCta: true /* Show the deny all button */,
+				AcceptAllCta: true /* Show the accept all button when highPrivacy on */,
+				highPrivacy: true /* HIGHLY RECOMMANDED Disable auto consent */,
 
-            <div class="page_activ">
+				handleBrowserDNTRequest: false /* If Do Not Track == 1, disallow all */,
 
-                <p class="nav"><i class="fab fa-html5"></i>Portfolio</p>
+				removeCredit: false /* Remove credit link */,
+				moreInfoLink: true /* Show more info link */,
 
-            </div>
+				useExternalCss: false /* If false, the tarteaucitron.css file will be loaded */,
+				useExternalJs: false /* If false, the tarteaucitron.js file will be loaded */,
 
-            <div class="main">
+				//"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
 
-                <h1>Mes réalisations</h1>
+				readmoreLink: "" /* Change the default readmore link */,
 
-                <h2>Premier site</h2>
+				mandatory: true /* Show a message about mandatory cookies */,
+			});
+		</script>
 
-                <a class="réalisation" href="./Réalisation/Site test WEB_1/index.html">
+		<title>Sven REMOND | Developpeur | Réalisations</title>
+	</head>
 
-                    <div class="fixe">
-                        <img src="./Images/Premier_site.jpg" alt="Mon premier site">
-                    </div>
+	<body>
+		<main class="container">
+			<h4>Terminale</h4>
+			<p>
+				Travail de groupe autour du
+				<a href="https://drive.google.com/drive/folders/10q_VyEQRK-6-XpRL8UzrgLaDFkvn-x9D?usp=sharing">skate pliable</a>
+			</p>
+			<h4>1A DUT- MMI</h4>
 
-                    <div class="anime">
-                        <p>Ce site a été le premier site que j'ai fait, il a été créer pour un cours</p>
-                    </div>
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Premier site</p>
+					<p>
+						Ceci est le premier site que nous avons créer au début de la formation, le sujet était au choix et les
+						contrainte se portait sur la réalisation (nombre de page, effet de style).
+					</p>
+				</div>
+			</div>
 
-                </a>
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Aditii</p>
+					<p>Ce site est un exercice d'intégration.</p>
+				</div>
+			</div>
 
-                <h2>Projet Biblio</h2>
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Projet biblio</p>
+					<p>Biblio était un projet destiné a nous noté sur du PHP.</p>
+				</div>
+			</div>
 
-                <a class="réalisation" href="./Réalisation/Biblio/controleur.php">
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">VegeNove</p>
+					<p>
+						VegeNove était un projet de groupe. <a href="">Le sujet</a> précisait d'utiliser un CMS donc nous avons
+						utilisé Wordpress.
+					</p>
+				</div>
+			</div>
 
-                    <div class="fixe">
-                        <img src="./Images/Biblio.jpg" alt="Site Bibliothèque">
-                    </div>
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Projet INFO2</p>
+					<p>
+						Destiné a nous noté, pour ce projet je me suis mis comme contrainte de refondre le site de l'association
+						<a href="">animaux en détresse</a>, je me suis concentré sur les points qu'y allait ètre noté et par
+						conséquent je ne l'ai pas fini, mais je compte bien le terminer pour pouvoir le proposer a l'assossiation.
+					</p>
+				</div>
+			</div>
 
-                    <div class="anime">
-                        <p>Ce site est un projet de cours qui a servi a nous acomoder avec le PHP</p>
-                    </div>
+			<h4>2A DUT- MMI</h4>
 
-                </a>
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Admin panel</p>
+					<p>
+						Intégration d'un panel admin avec le framework bootstrap. J'ai aussi eu l'oportunité de découvrir NodeJS
+						grace a ce projet
+					</p>
+				</div>
+			</div>
 
-                <h2>Aditii</h2>
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Inte smartphone</p>
+					<p>Integraption d'une page smartphone pendant le premier cours de SASS</p>
+				</div>
+			</div>
 
-                <a class="réalisation" href="./Réalisation/Aditii/index.html">
+			<div class="containerCreation">
+				<img src="" alt="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Liste de lien</p>
+					<p>Projet sur plusieur séance destiner a amelioer, réviser et aprendre le JS</p>
+				</div>
+			</div>
+		</main>
 
-                    <div class="fixe">
-                        <img src="./Images/Aditii.jpg" alt="Intégration de Aditii">
-                    </div>
+		<footer>
+			<p>Sven REMOND. Tous droits réservés</p>
+		</footer>
 
-                    <div class="anime">
-                        <p>Ce site est une intégration qui a servi a être noté</p>
-                    </div>
+		<!-- Script Tarte au citron -->
+		<script type="text/javascript">
+			tarteaucitron.user.gtagUa = "G-EVQBZLM2MS";
+			tarteaucitron.user.gtagMore = function () {
+				/* add here your optionnal gtag() */
+			};
+			(tarteaucitron.job = tarteaucitron.job || []).push("gtag");
+		</script>
 
-                </a>
-
-                <h2>Site Projet S2</h2>
-
-                <a class="réalisation" href="./Réalisation/Aditii/index.html">
-
-                    <div class="fixe">
-                        <img src="./Images/Logo_animaux_en_détresse.png" alt="Logo animaux en détresse">
-                    </div>
-
-                    <div class="anime">
-                        <p>Ce projet a été réaliser dans le cadre de la notation de PHP et SQL en S2. Ceci aurait pu
-                            etre un projet réel car j'ai refait le site de l'association animaux en détresse.</p>
-                    </div>
-
-                </a>
-
-            </div>
-
-        </main>
-
-    </div>
-
-</body>
-
+		<script type="text/javascript">
+			tarteaucitron.user.yandexmetrica = "71077297";
+			(tarteaucitron.job = tarteaucitron.job || []).push("metrica");
+		</script>
+	</body>
 </html>

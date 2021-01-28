@@ -8,11 +8,15 @@ html {
 .container {
 	background-color: $darker;
 	color: $blanc;
-    font-size: 1rem;
-    
-    @media screen AND (min-width: 1024px){
-        font-size: 1.5rem;
-    }
+	font-size: 1rem;
+	width: 100vw;
+	max-width: 100%;
+	min-height: 100vh;
+	padding-bottom: 1.5rem;
+
+	@media screen AND (min-width: 1024px) {
+		font-size: 1.5rem;
+	}
 }
 
 img {
@@ -30,11 +34,11 @@ h3 {
 	font-style: $fs-soustitre;
 	font-size: 2rem;
 	background-color: $dark;
-    padding: 0.5rem;
-    
-    @media screen AND (min-width: 1024px){
-        font-size: 2.5rem;
-    }
+	padding: 0.5rem;
+
+	@media screen AND (min-width: 1024px) {
+		font-size: 2.5rem;
+	}
 }
 
 h4 {
@@ -48,9 +52,9 @@ h4 {
 	font-style: $fs-soustitre;
 	font-size: 1.5rem;
 	background-color: $dark;
-    padding: 0.5rem;
-    
-    @media screen AND (min-width: 1024px){
-        font-size: 2rem;
-    }
+	padding: 0.5rem;
+
+	@media screen AND (min-width: 1024px) {
+		font-size: 2rem;
+	}
 }

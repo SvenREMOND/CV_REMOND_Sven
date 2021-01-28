@@ -1,0 +1,39 @@
+.containerCreation {
+	background-color: $dark;
+	margin: 1.5rem;
+	padding: 2vw;
+	border: 0.3rem solid $dark;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+
+	display: flex;
+
+	&__image {
+		min-width: 20%;
+		max-width: 40%;
+		height: 100%;
+	}
+
+	&__text {
+		&--titre {
+			font-size: 1.2rem;
+			font-family: $fs-soustitre;
+			font-style: $fs-soustitre;
+			padding-bottom: 20px;
+
+			@media screen AND (min-width: 1024px) {
+				font-size: 1.7rem;
+			}
+		}
+
+		line-height: 1.5vw;
+		font-size: 1rem;
+
+		@media screen AND (min-width: 1024px) {
+			font-size: 1.5rem;
+		}
+	}
+}

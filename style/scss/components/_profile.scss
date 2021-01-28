@@ -5,7 +5,8 @@
 .Profil {
 	&__presentation {
 		p {
-			padding: 2vw;
+			padding: 1vw;
+			line-height: 1.5vw;
 		}
 	}
 
@@ -53,7 +54,7 @@
 
 	&__grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		align-items: center;
 		justify-items: center;
 	}
