@@ -594,8 +594,16 @@ h4 {
 }
 
 .Profil__presentation p {
-  padding: 1vw;
-  line-height: 1.5vw;
+  margin: 1.5rem 1vw 0rem 1vw;
+  line-height: 1.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .Profil__presentation p {
+    margin: 0;
+    padding: 1vw;
+    line-height: 1.7rem;
+  }
 }
 
 .Profil__cursus {
@@ -955,16 +963,37 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCreation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .containerCreation__image {
-  min-width: 20%;
-  max-width: 40%;
+  width: 100%;
   height: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  .containerCreation__image {
+    width: unset;
+    min-width: 20%;
+    max-width: 40%;
+  }
+}
+
 .containerCreation__text {
-  line-height: 1.5vw;
+  margin: 1.5rem 1vw 0rem 1vw;
+  line-height: 1.3rem;
   font-size: 1rem;
 }
 
@@ -983,7 +1012,9 @@ h5 {
 
 @media screen and (min-width: 1024px) {
   .containerCreation__text {
-    font-size: 1.5rem;
+    margin: 0;
+    padding: 1vw;
+    line-height: 1.7rem;
   }
 }
 

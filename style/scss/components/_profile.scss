@@ -5,8 +5,14 @@
 .Profil {
 	&__presentation {
 		p {
-			padding: 1vw;
-			line-height: 1.5vw;
+			margin: 1.5rem 1vw 0rem 1vw;
+			line-height: 1.3rem;
+
+			@media screen AND (min-width: 1024px) {
+				margin: 0;
+				padding: 1vw;
+				line-height: 1.7rem;
+			}
 		}
 	}
 
