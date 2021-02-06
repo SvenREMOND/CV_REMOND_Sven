@@ -13,7 +13,4 @@ $message = $_POST['message'] . "\n\n de " . strtoupper($_POST['lastname']) . " "
 
 $mail = ['Subject' => $object, 'Message' => $message];
 
-sendMail($datas, $mail);
-
-header('Location: ./index.html');
-exit();
+// sendMail($datas, $mail);

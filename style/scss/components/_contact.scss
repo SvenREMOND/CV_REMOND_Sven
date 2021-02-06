@@ -4,7 +4,6 @@ h5 {
 }
 
 .Contact {
-
 	&__info {
 		padding: 2vw;
 
@@ -230,6 +229,22 @@ h5 {
 	margin-left: 2vh;
 	position: relative;
 	width: 200px;
+
+	&__send {
+		position: absolute;
+		left: 220px;
+		top: 0;
+		height: 100%;
+		font-size: 4.5rem;
+
+		&--ok {
+			color: green;
+		}
+
+		&--no {
+			color: red;
+		}
+	}
 
 	&__fill {
 		display: block;

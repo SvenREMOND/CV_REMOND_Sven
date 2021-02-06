@@ -602,7 +602,7 @@ h4 {
   .Profil__presentation p {
     margin: 0;
     padding: 1vw;
-    line-height: 1.7rem;
+    line-height: 2rem;
   }
 }
 
@@ -919,6 +919,22 @@ h5 {
   width: 200px;
 }
 
+.button__send {
+  position: absolute;
+  left: 220px;
+  top: 0;
+  height: 100%;
+  font-size: 4.5rem;
+}
+
+.button__send--ok {
+  color: green;
+}
+
+.button__send--no {
+  color: red;
+}
+
 .button__fill {
   display: block;
   position: absolute;
@@ -1016,6 +1032,10 @@ h5 {
     padding: 1vw;
     line-height: 1.7rem;
   }
+}
+
+.space {
+  padding: 1rem 0;
 }
 
 footer {
