@@ -1,0 +1,17 @@
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	padding: 1em 0;
+	border-top: 0.2em solid $grey;
+
+	&__nav {
+		text-align: center;
+
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+}

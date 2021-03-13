@@ -58,3 +58,20 @@ h4 {
 		font-size: 2rem;
 	}
 }
+
+.link {
+	color: $sous-titre;
+	text-decoration: none;
+	border-bottom: dotted 0.3rem;
+
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+
+	&:hover {
+		color: $titre;
+		border-bottom: none;
+	}
+}

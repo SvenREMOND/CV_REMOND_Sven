@@ -1,0 +1,72 @@
+/* Page complète */
+
+.font{
+    margin: auto;
+    padding-top: 10px;
+    width: 960px;
+    background-color: rgb(133, 129, 129);
+}
+
+/* Navigation */
+
+img{
+    height: 20px;
+}
+
+figure{
+    margin: 0px;
+}
+
+ul{
+    padding-right: 200px;
+    background-color: #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+li {
+	display: inline;
+	list-style: none;
+    margin: 10px;
+    text-align: center;
+}
+
+li a {
+	display: inline-block;
+	width: 100px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	background: #999;
+} 
+
+/* Section */
+
+section{
+    background-color: rgb(78, 164, 221);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+h1{                 /* Titre 1 */
+    color: blue;
+    text-align: center;
+    font-size: 70px;
+    margin: 0px;
+}
+
+form{
+    padding: 5px 5px 20px 5px;
+    margin: 0px;
+}
+
+/* Footer */
+
+footer{
+    padding: 5px;
+    width: 950px;
+    background-color: rgb(155, 125, 125);
+}

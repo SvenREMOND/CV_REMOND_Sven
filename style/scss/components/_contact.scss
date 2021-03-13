@@ -7,15 +7,6 @@ h5 {
 	&__info {
 		padding: 2vw;
 
-		a {
-			text-decoration: none;
-			color: $sous-titre;
-
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-
 		&--item {
 			padding: 2vh 0;
 

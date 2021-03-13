@@ -1,0 +1,333 @@
+/* ARS MAquette -> Montserrat
+Shentox -> Rajdhani
+Avalon -> Barlow
+
+
+
+    font-family: 'Montserrat', ;
+
+    font-family: 'Rajdhani', ;
+
+    font-family: 'Barlow', ;
+
+
+ */
+
+/* DECLARATIONS GLOBALES */
+
+/* Box-sizing */
+/* cf: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/  */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 900px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0 18px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Utilitaires */
+.flex {
+  display: flex;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.items_center {
+  align-items: center;
+}
+
+/* HEADER */
+
+.logo {
+  display: none;
+  width: 106px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  /* background: linear-gradient(to top, black, 20%, cyan); */
+  background: linear-gradient(to bottom right, #c09, 85%, #f42);
+  /* background-size: 50%; */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo:hover {
+  background: url(./images/home-1.gif);
+}
+
+.logo_image {
+  display: inline-block;
+  width: 66px;
+}
+
+nav li {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* *************** HEADER - LIGNE 1 ************************** */
+.menu_superieur {
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: 32px;
+  background-color: #000;
+  color: #fff;
+}
+
+.business_menu li {
+  margin-right: 10px;
+}
+
+.about_menu li {
+  margin-left: 10px;
+}
+
+/* *************** HEADER - LIGNE 2 ************************** */
+.menu_inferieur {
+  font-family: "Rajdhani";
+  font-size: 17px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #b2b2b2;
+  text-transform: uppercase;
+}
+
+.content_menu li {
+  margin-right: 18px;
+}
+
+.content_menu li:hover {
+  color: black;
+
+}
+
+.search_menu {
+  font-size: 14px;
+  color: lightgray;
+  border-left: 1px solid lightgray;
+}
+
+.fa-search {
+  font-size: 16px;
+  transform: rotateZ(90deg);
+  vertical-align: middle;
+}
+
+.fa-search:hover {
+  color: black;
+}
+
+.invite {
+  font-size: 14px;
+  color: #737373;
+  line-height: 48px;
+
+}
+
+.invite img {
+  /* width: 125px; */
+  height: 48px;
+  vertical-align: middle;
+}
+
+.invite em {
+  font-size: 22px;
+  font-style: normal;
+  color: #f42;
+  letter-spacing: 0;
+  margin: 0 1ch;
+  vertical-align: middle;
+}
+
+.invite button {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  background-color: #00cccc;
+  margin: 0 12px;
+  width: 70px;
+  height: 30px;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+.invite button:hover {
+  background-color: #9900cc;
+}
+
+/* *************** HEADER - LIGNE 3 ************************** */
+.incitation {
+  font-family: "Rajdhani";
+  font-size: 14px;
+  line-height: 31px;
+  background-color: #ffdd33;
+  padding-left: 18px;
+}
+
+/* Main */
+main {
+  padding: 4px 12px 12px 12px;
+}
+
+.grande {
+  position: relative;
+  height: 544px;
+  width: 70%;
+  color: white;
+
+  background:
+    url(./image/logo\ \(1\).svg) 25px 25px / 50% no-repeat,
+    linear-gradient(rgba(230, 100, 101, 0.5), rgba(145, 152, 229, 0.5)),
+    url(./image/article\ 1.png) left top / cover no-repeat;
+}
+
+.grande:hover {
+  background:
+    url(./images/logo.svg) 25px 25px / 50% no-repeat,
+    linear-gradient(rgba(230, 100, 101, 0.1), rgba(145, 152, 229, 0.1)),
+    url(./image/article\ 1.png) left top / cover no-repeat;
+}
+
+.date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  margin: 15px;
+}
+
+.theme {
+  margin: 0;
+  font-family: "Rajdhani";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.titre {
+  margin: 0;
+  font-family: "Barlow";
+  /* font-size: 56px; */
+  font-size: calc(40px + (56 - 40) * ((100vw - 900px) / (1600 - 900)));
+  font-weight: 700;
+}
+
+.auteur {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: lightgray;
+}
+
+.auteur .far,
+.auteur .fas {
+  margin: 0 6px;
+}
+
+aside {
+  width: 30%;
+  padding-left: 8px;
+}
+
+.petite {
+  position: relative;
+  height: 268px;
+  background-color: red;
+}
+
+.petite:first-child {
+  margin-bottom: 8px;
+}
+
+.petite .titre {
+  color: white;
+  font-size: calc(14px + (24 - 14) * ((100vw - 900px) / (1600 - 900)));
+  line-height: 31px;
+  ;
+}
+
+.un {
+  background: linear-gradient(rgba(230, 100, 101, 0.5), rgba(145, 152, 229, 0.5)),
+    url(./image/article\ 2.jpg) left top / cover no-repeat;
+}
+
+.un:hover {
+  background: linear-gradient(rgba(230, 100, 101, 0.1), rgba(145, 152, 229, 0.1)),
+    url(./image/article\ 2.jpg) left top / cover no-repeat;
+}
+
+.deux {
+  background: linear-gradient(rgba(230, 100, 101, 0.5), rgba(145, 152, 229, 0.5)),
+    url(./image/article\ 3.jpg) left top / cover no-repeat;
+}
+
+.deux:hover {
+  background: linear-gradient(rgba(230, 100, 101, 0.1), rgba(145, 152, 229, 0.1)),
+    url(./image/article\ 3.jpg) left top / cover no-repeat;
+}
+
+/* Responsive */
+@media (max-width:960px) {
+  .header_container {
+    display: flex;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .invite {
+    display: none;
+  }
+
+  nav {
+    width: calc(100% - 106px)
+  }
+
+  .titre {
+    font-size: 40px;
+  }
+
+  .petite .titre {
+    font-size: 14px;
+  }
+}
+
+@media(min-width:1920px) {
+  .titre {
+    font-size: 56px;
+  }
+
+  .petite .titre {
+    font-size: 24px;
+  }
+}
