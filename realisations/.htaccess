@@ -1,0 +1,4 @@
+AuthName "Voir la réalisation !"
+AuthType Basic
+AuthUserFile "/var/www/vhosts/sven-remond.fr/httpdocs/CV/realisation/.htpasswd"
+Require valid-user
