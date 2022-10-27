@@ -481,6 +481,10 @@ html {
   background-color: #1e1e1e;
   color: white;
   font-size: 1rem;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -531,6 +535,22 @@ h4 {
   h4 {
     font-size: 2rem;
   }
+}
+
+.link {
+  color: #967367;
+  text-decoration: none;
+  border-bottom: dotted 0.3rem;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: #5881b3;
+  border-bottom: none;
 }
 
 .Accueil {
@@ -590,7 +610,16 @@ h4 {
 }
 
 .Profil__presentation p {
-  padding: 2vw;
+  margin: 1.5rem 1vw 0rem 1vw;
+  line-height: 1.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .Profil__presentation p {
+    margin: 0;
+    padding: 1vw;
+    line-height: 2rem;
+  }
 }
 
 .Profil__cursus {
@@ -627,20 +656,26 @@ h4 {
 }
 
 .Profil__cursus--link {
+  padding-top: 1rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: blue;
 }
 
 .Profil__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+}
+
+.Profil__grid--cursus {
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .Profil__competence {
@@ -654,10 +689,11 @@ h4 {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  height: 200px;
 }
 
 .Profil__competence img {
-  width: 100%;
+  height: 140px;
   padding-bottom: 1rem;
 }
 
@@ -666,24 +702,8 @@ h5 {
   padding-bottom: 0.5vh;
 }
 
-.Contact {
-  /* &__grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	} */
-}
-
 .Contact__info {
   padding: 2vw;
-}
-
-.Contact__info a {
-  text-decoration: none;
-  color: #967367;
-}
-
-.Contact__info a:hover {
-  text-decoration: underline;
 }
 
 .Contact__info--item {
@@ -913,6 +933,22 @@ h5 {
   width: 200px;
 }
 
+.button__send {
+  position: absolute;
+  left: 220px;
+  top: 0;
+  height: 100%;
+  font-size: 4.5rem;
+}
+
+.button__send--ok {
+  color: green;
+}
+
+.button__send--no {
+  color: red;
+}
+
 .button__fill {
   display: block;
   position: absolute;
@@ -942,6 +978,247 @@ h5 {
 
 .button__btn:hover .button__fill {
   width: 100%;
+}
+
+.containerCreation {
+  background-color: #252526;
+  margin: 1.5rem;
+  padding: 2vw;
+  border: 0.3rem solid #252526;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCreation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.containerCreation__image {
+  height: 10rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCreation__image {
+    width: unset;
+    min-width: 20%;
+    max-width: 40%;
+  }
+}
+
+.containerCreation__text {
+  margin: 1.5rem 1vw 0rem 1vw;
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+
+.containerCreation__text--titre {
+  font-size: 1.2rem;
+  font-family: "Myriad";
+  font-style: "Myriad";
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCreation__text--titre {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCreation__text {
+    margin: 0;
+    padding: 1vw;
+    line-height: 1.7rem;
+  }
+}
+
+.containerCreation__see {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem calc(0.7rem * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  font-size: 1.5em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+}
+
+.containerCreation__see .text {
+  -webkit-transform: translate3d(0, 0.7rem, 0);
+          transform: translate3d(0, 0.7rem, 0);
+  display: block;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: -webkit-transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s, -webkit-transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.containerCreation__see:after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: calc(0.7rem * 1.2);
+  right: calc(0.7rem * 1.2);
+  height: 3px;
+  background: #5881b3;
+  -webkit-transition: right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, -webkit-transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s;
+  transition: right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, -webkit-transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, -webkit-transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.containerCreation .line {
+  position: absolute;
+  background: #5881b3;
+}
+
+.containerCreation .line.-right, .containerCreation .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  -webkit-transform: scale3d(1, 0, 1);
+          transform: scale3d(1, 0, 1);
+}
+
+.containerCreation .line.-top, .containerCreation .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+}
+
+.containerCreation .line.-right {
+  right: -3px;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s, -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.containerCreation .line.-top {
+  top: -3px;
+  -webkit-transition: -webkit-transform 0.08s linear 0.43s;
+  transition: -webkit-transform 0.08s linear 0.43s;
+  transition: transform 0.08s linear 0.43s;
+  transition: transform 0.08s linear 0.43s, -webkit-transform 0.08s linear 0.43s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.containerCreation .line.-left {
+  left: -3px;
+  -webkit-transition: -webkit-transform 0.08s linear 0.51s;
+  transition: -webkit-transform 0.08s linear 0.51s;
+  transition: transform 0.08s linear 0.51s;
+  transition: transform 0.08s linear 0.51s, -webkit-transform 0.08s linear 0.51s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.containerCreation .line.-bottom {
+  bottom: -3px;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transition: -webkit-transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01), -webkit-transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.containerCreation a:hover .text,
+.containerCreation a:active .text {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: -webkit-transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s, -webkit-transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+
+.containerCreation a:hover:after,
+.containerCreation a:active:after {
+  -webkit-transform: scale3d(0, 1, 1);
+          transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
+  transition: right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
+}
+
+.containerCreation a:hover .line,
+.containerCreation a:active .line {
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.containerCreation a:hover .line.-right,
+.containerCreation a:active .line.-right {
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transition: -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s, -webkit-transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.containerCreation a:hover .line.-top,
+.containerCreation a:active .line.-top {
+  -webkit-transition: -webkit-transform 0.08s linear 0.4s;
+  transition: -webkit-transform 0.08s linear 0.4s;
+  transition: transform 0.08s linear 0.4s;
+  transition: transform 0.08s linear 0.4s, -webkit-transform 0.08s linear 0.4s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.containerCreation a:hover .line.-left,
+.containerCreation a:active .line.-left {
+  -webkit-transition: -webkit-transform 0.08s linear 0.48s;
+  transition: -webkit-transform 0.08s linear 0.48s;
+  transition: transform 0.08s linear 0.48s;
+  transition: transform 0.08s linear 0.48s, -webkit-transform 0.08s linear 0.48s;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.containerCreation a:hover .line.-bottom,
+.containerCreation a:active .line.-bottom {
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transition: -webkit-transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s, -webkit-transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.space {
+  padding: 1rem 0;
 }
 
 footer {

@@ -4,22 +4,8 @@ h5 {
 }
 
 .Contact {
-	/* &__grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	} */
-
 	&__info {
 		padding: 2vw;
-
-		a {
-			text-decoration: none;
-			color: $sous-titre;
-
-			&:hover {
-				text-decoration: underline;
-			}
-		}
 
 		&--item {
 			padding: 2vh 0;
@@ -234,6 +220,22 @@ h5 {
 	margin-left: 2vh;
 	position: relative;
 	width: 200px;
+
+	&__send {
+		position: absolute;
+		left: 220px;
+		top: 0;
+		height: 100%;
+		font-size: 4.5rem;
+
+		&--ok {
+			color: green;
+		}
+
+		&--no {
+			color: red;
+		}
+	}
 
 	&__fill {
 		display: block;

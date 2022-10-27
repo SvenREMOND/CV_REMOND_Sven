@@ -1,106 +1,471 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style/css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/bf96a16ec0.js"
+			crossorigin="anonymous"
+		></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"version": "1.0",
+				"url": "https://www.sven-remond.fr/Portfolio.html",
+				"about": {
+					"@type": "Thing",
+					"description": "The resume of REMOND Sven, a French Web Developper"
+				},
+				"author": {
+					"@type": "Person",
+					"name": "REMOND Sven",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Strasbourg",
+						"postalCode": "67000",
+						"addressCountry": "France"
+					},
+					"email": "mailto:sven.remond.sti2@gmail.com",
+					"jobTitle": "Web Developper",
+					"url": "https://www.sven-remond.fr",
+					"gender": "Male"
+				}
+			}
+		</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/bf96a16ec0.js" crossorigin="anonymous"></script>
-    <title>CV | REMOND Sven</title>
-</head>
+		<script
+			type="text/javascript"
+			src="./JS/tarteaucitron.js-1.8.3/tarteaucitron.js"
+		></script>
 
-<body>
+		<script type="text/javascript">
+			tarteaucitron.init({
+				privacyUrl: "" /* Privacy policy url */,
 
-    <div class="wrap">
+				hashtag: "#tarteaucitron" /* Open the panel with this hashtag */,
+				cookieName: "tarteaucitron" /* Cookie name */,
 
-        <nav>
+				orientation: "middle" /* Banner position (top - bottom) */,
 
-            <div class="logo"></div>
+				showAlertSmall: false /* Show the small banner on bottom right */,
+				cookieslist: false /* Show the cookie list */,
 
-            <ul>
-                <li><a href="./index.html"><i class="fab fa-html5"></i>Acceuil</a></li>
-                <li><a href="./Profil.html"><i class="fab fa-html5"></i>Profil</a></li>
-                <li class="actif"><a href="./Portfolio.html"><i class="fab fa-html5"></i>Portfolio</a></li>
-                <li><a href="./contact.html"><i class="fab fa-html5"></i>Contact</a></li>
-            </ul>
+				showIcon: true /* Show cookie icon to manage cookies */,
+				iconPosition:
+					"BottomRight" /* BottomRight, BottomLeft, TopRight and TopLeft */,
 
-        </nav>
+				adblocker: false /* Show a Warning if an adblocker is detected */,
 
-        <main>
+				DenyAllCta: true /* Show the deny all button */,
+				AcceptAllCta: true /* Show the accept all button when highPrivacy on */,
+				highPrivacy: true /* HIGHLY RECOMMANDED Disable auto consent */,
 
-            <div class="page_activ">
+				handleBrowserDNTRequest: false /* If Do Not Track == 1, disallow all */,
 
-                <p class="nav"><i class="fab fa-html5"></i>Portfolio</p>
+				removeCredit: false /* Remove credit link */,
+				moreInfoLink: true /* Show more info link */,
 
-            </div>
+				useExternalCss: false /* If false, the tarteaucitron.css file will be loaded */,
+				useExternalJs: false /* If false, the tarteaucitron.js file will be loaded */,
 
-            <div class="main">
+				//"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
 
-                <h1>Mes réalisations</h1>
+				readmoreLink: "" /* Change the default readmore link */,
 
-                <h2>Premier site</h2>
+				mandatory: true /* Show a message about mandatory cookies */,
+			});
+		</script>
 
-                <a class="réalisation" href="./Réalisation/Site test WEB_1/index.html">
+		<title>Sven REMOND | Developpeur | Réalisations</title>
+	</head>
 
-                    <div class="fixe">
-                        <img src="./Images/Premier_site.jpg" alt="Mon premier site">
-                    </div>
+	<body>
+		<main class="container">
+			<h4>Terminale</h4>
+			<p class="space">
+				Travail de groupe autour du
+				<a
+					class="link"
+					target="_blank"
+					href="https://drive.google.com/drive/folders/10q_VyEQRK-6-XpRL8UzrgLaDFkvn-x9D?usp=sharing"
+					>skate pliable</a
+				>
+			</p>
+			<h4>Première année de DUT- MMI</h4>
 
-                    <div class="anime">
-                        <p>Ce site a été le premier site que j'ai fait, il a été créer pour un cours</p>
-                    </div>
+			<p style="color: red; padding: 2rem">
+				<b>
+					Pour des raison de sécurité toutes les réalisation pointant dans un
+					sous dossier sont protégée par le user et le mot de passe "visit"
+				</b>
+			</p>
 
-                </a>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/First_site.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Premier site</p>
+					<p>
+						Ceci est le premier site que nous avons créer au début de la
+						formation, le sujet était au choix et les contrainte se portait sur
+						la réalisation (nombre de page, effet de style).
+					</p>
+					<a
+						href="./realisations/premier_site/index.html"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                <h2>Projet Biblio</h2>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/Aditii.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Aditii</p>
+					<p>Ce site est un exercice d'intégration.</p>
+					<a
+						href="./realisations/Aditii/index.html"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                <a class="réalisation" href="./Réalisation/Biblio/controleur.php">
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/The_Next_Web.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">The Next Web</p>
+					<p>
+						Ce site est un exercice d'intégration en référence au site
+						<a class="link" href="https://thenextweb.com/" target="_blank"
+							>The Next Web</a
+						>
+					</p>
+					<a
+						target="_blank"
+						href="./realisations/The_Next_Web/index.html"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                    <div class="fixe">
-                        <img src="./Images/Biblio.jpg" alt="Site Bibliothèque">
-                    </div>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/Biblio.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Projet biblio</p>
+					<p>Biblio était un projet destiné a nous noté sur du PHP.</p>
+					<a
+						href="./realisations/Biblio_REMOND_Sven/index.php"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                    <div class="anime">
-                        <p>Ce site est un projet de cours qui a servi a nous acomoder avec le PHP</p>
-                    </div>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/VegeNove.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">VegeNove</p>
+					<p>
+						VegeNove était un projet de groupe.
+						<a
+							class="link"
+							target="_blank"
+							href="https://drive.google.com/drive/folders/1GJXWQGvwiF-mL5LYumocTPeO_9mTpsMk?usp=sharing"
+							>Le sujet</a
+						>
+						précisait d'utiliser un CMS donc nous avons utilisé Wordpress.
+					</p>
+					<!-- <a href="#" class="containerCreation__see">
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a> -->
+				</div>
+			</div>
 
-                </a>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/Projet_INFO2.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Projet INFO2</p>
+					<p>
+						Destiné a nous noté, pour ce projet je me suis mis comme contrainte
+						de refondre le site de l'association
+						<a
+							class="link"
+							target="_blank"
+							href="http://www.animaux-en-detresse.com/"
+							>animaux en détresse</a
+						>, je me suis concentré sur les points qu'y allait ètre noté et par
+						conséquent je ne l'ai pas fini, mais je compte bien le terminer pour
+						pouvoir le proposer a l'assossiation.
+					</p>
+					<a
+						href="./realisations/Projet_INFO_2/index.php"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                <h2>Aditii</h2>
+			<h4>Deuxième année de DUT- MMI</h4>
 
-                <a class="réalisation" href="./Réalisation/Aditii/index.html">
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/Admin_panel.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Admin panel</p>
+					<p>
+						Intégration d'un panel admin avec le framework bootstrap. J'ai aussi
+						eu l'oportunité de découvrir NodeJS grace a ce projet
+					</p>
+					<a
+						href="./realisations/admin_Panel/Exo/public/index.html"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                    <div class="fixe">
-                        <img src="./Images/Aditii.jpg" alt="Intégration de Aditii">
-                    </div>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/Inte_smartphone.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Inte smartphone</p>
+					<p>
+						Integraption d'une page smartphone pendant le premier cours de SASS
+					</p>
+					<a
+						href="./realisations/Inte_smartphone/index.html"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                    <div class="anime">
-                        <p>Ce site est une intégration qui a servi a être noté</p>
-                    </div>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/Hexamodernus.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Hexamodernus</p>
+					<p>
+						Projet de groupe qui visait a nous aprendre le référencement. Le
+						principe était de créer un site sur un sujet donné, en essayant
+						d'etre positionné le plus haut sur google selon les requètes.
+					</p>
+					<a href="https://hexamodernus.fr/" class="containerCreation__see">
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                </a>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/PROG3_card.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Liste de lien</p>
+					<p>
+						Projet sur plusieur séance destiner a amelioer, réviser et aprendre
+						le JS
+					</p>
+					<a
+						target="_blank"
+						href="https://codesandbox.io/s/floral-meadow-kkxxp"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                <h2>Site Projet S2</h2>
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/envers_des_corps.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Refonte envers des corps</p>
+					<p>
+						Projet de groupe visant a refondre le site
+						<a
+							class="link"
+							target="_blank"
+							href="http://cuej.info/mini-sites/corps/"
+						>
+							envers des corps</a
+						>
+						que les étudiant MMI de l'an passée on créer pour le
+						<a class="link" href="https://cuej.unistra.fr/" target="_blank"
+							>CUEJ</a
+						>.
+					</p>
+					<a
+						href="./realisations/corps/index.php"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                <a class="réalisation" href="./Réalisation/Aditii/index.html">
+			<div class="containerCreation">
+				<img
+					src="./Images/realisation/etat_critique.png"
+					class="containerCreation__image"
+				/>
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Etat critique</p>
+					<p>
+						Projet de groupe en colaboration avec le
+						<a class="link" href="https://cuej.unistra.fr/" target="_blank"
+							>CUEJ</a
+						>.
+					</p>
+					<a
+						target="_blank"
+						href="http://cuej.info/mini-sites/relance/"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                    <div class="fixe">
-                        <img src="./Images/Logo_animaux_en_détresse.png" alt="Logo animaux en détresse">
-                    </div>
+			<div class="containerCreation">
+				<img src="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Biblio symfony</p>
+					<p>Bibliothèque créer avec symfony</p>
+					<a
+						target="_blank"
+						href="http://109.10.148.152/"
+						class="containerCreation__see"
+					>
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
 
-                    <div class="anime">
-                        <p>Ce projet a été réaliser dans le cadre de la notation de PHP et SQL en S2. Ceci aurait pu
-                            etre un projet réel car j'ai refait le site de l'association animaux en détresse.</p>
-                    </div>
+			<div class="containerCreation">
+				<img src="" class="containerCreation__image" />
+				<div class="containerCreation__text">
+					<p class="containerCreation__text--titre">Strastour</p>
+					<p>
+						Site développer avec symfony incluant de la géolocalisation. Il y a
+						un jeu développer en JS qui est liéer au parcours du site.
+					    </p>
+					<a target="_blank" href="" class="containerCreation__see">
+						<span class="text">Voir</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span
+					></a>
+				</div>
+			</div>
+		</main>
 
-                </a>
+		<footer>
+			<p>Sven REMOND. Tous droits réservés</p>
+		</footer>
 
-            </div>
+		<!-- Script Tarte au citron -->
+		<script type="text/javascript">
+			tarteaucitron.user.gtagUa = "G-EVQBZLM2MS";
+			tarteaucitron.user.gtagMore = function () {
+				/* add here your optionnal gtag() */
+			};
+			(tarteaucitron.job = tarteaucitron.job || []).push("gtag");
+		</script>
 
-        </main>
-
-    </div>
-
-</body>
-
+		<script type="text/javascript">
+			tarteaucitron.user.yandexmetrica = "71077297";
+			(tarteaucitron.job = tarteaucitron.job || []).push("metrica");
+		</script>
+	</body>
 </html>

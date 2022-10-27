@@ -1,0 +1,57 @@
+.card {
+	width: 80%;
+	padding: 1em;
+	margin: 1em 0;
+	border: 0.3em solid $grey;
+
+	&__text {
+		margin: 0 0 2em 0;
+
+		font-size: 1em;
+		color: black;
+
+		&--grey {
+			color: grey;
+		}
+		&--bold {
+			font-weight: bold;
+		}
+	}
+
+	&__progress {
+		margin: 2em 0 0 0;
+
+		&--full {
+			margin-top: 0.2em;
+			background-color: $yellow;
+			height: 0.5em;
+			border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+			-moz-border-radius: 0.5em;
+			-ms-border-radius: 0.5em;
+			-o-border-radius: 0.5em;
+		}
+		&--mid {
+			margin-top: 0.2em;
+			background-color: $grey;
+			height: 0.5em;
+			border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+			-moz-border-radius: 0.5em;
+			-ms-border-radius: 0.5em;
+			-o-border-radius: 0.5em;
+		}
+		&--mid::before {
+			position: absolute;
+			width: 40%;
+			height: 0.5em;
+			background-color: $yellow;
+			content: " ";
+			border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+			-moz-border-radius: 0.5em;
+			-ms-border-radius: 0.5em;
+			-o-border-radius: 0.5em;
+		}
+	}
+}
